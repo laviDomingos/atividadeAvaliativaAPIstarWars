@@ -2,7 +2,7 @@ import 'package:api_star_wars/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const StarWarsApp()); 
+  runApp(const StarWarsApp());
 }
 
 class StarWarsApp extends StatelessWidget {
@@ -17,6 +17,6 @@ class StarWarsApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const HomeScreen(),
-    );  
+    );
   }
 }

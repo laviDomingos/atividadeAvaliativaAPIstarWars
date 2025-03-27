@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/people.dart';
 
 class ApiService {
-  static const String baseUrl = 'https://swapi.dev/api/';
+  static const String baseUrl = 'https://swapi.dev/api';
 
   Future<List<People>> fetchPeoples() async {
     final response = await http.get(Uri.parse('$baseUrl/people'));
