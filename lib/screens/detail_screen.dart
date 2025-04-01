@@ -19,20 +19,27 @@ class _DetailScreenState extends State<DetailScreen> {
         title: Text(people.name),
         centerTitle: true,
       ),
-      body: Card(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("Name: ${people.name}", style: const TextStyle(fontSize: 20)),
-              const SizedBox(height: 8),
-              Text("Birthday: ${people.birthYear}", style: const TextStyle(fontSize: 20)),
-              const SizedBox(height: 8),
-              Text("Gender: ${people.gender}", style: const TextStyle(fontSize: 20)),
-              const SizedBox(height: 8),
-              Text("Skin Color: ${people.skinColor}", style: const TextStyle(fontSize: 20)),
-            ],
+      body: Center(
+        child: Card(
+          elevation: 4,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Name: ${people.name}", style: const TextStyle(fontSize: 20)),
+                const SizedBox(height: 8),
+                Text("Birthday: ${people.birthYear}", style: const TextStyle(fontSize: 20)),
+                const SizedBox(height: 8),
+                Text("Gender: ${people.gender}", style: const TextStyle(fontSize: 20)),
+                const SizedBox(height: 8),
+                Text("Skin Color: ${people.skinColor}", style: const TextStyle(fontSize: 20)),
+              ],
+            ),
           ),
         ),
       ),
